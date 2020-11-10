@@ -1,14 +1,15 @@
-def maximum(num1, num2, num3):
-    """Return the maximum number between num1, num2 and num3
+def maximum(*args):
+    """Return the maximum number in args
     """
-    max = num1
+    if args:
+        max = args[0] # assign the first element in args to max
 
-    if num2 > max:
-        max = num2
-    if num3 > max:
-        max = num3
-
-    return max
+        for num in args[1:]:
+            if num > max:
+                max = num
+        return max
+    else:
+        raise TypeError('maximum expected at least 1 arguments, got 0')
 
 if __name__ == '__main__':
-    print(f'The maximum between -1 ,99, 6 is {maximum(-1 ,99, 6)}')
+    print(f'The maximum between -1 ,5, 12, 4, 11, 81, 6 is {maximum(-1 ,5, 12, 4, 11, 81, 6)}')
