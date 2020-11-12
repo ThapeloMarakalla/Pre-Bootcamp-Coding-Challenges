@@ -5,10 +5,18 @@ def to_standard_time(num):
     num %= 60
     minutes = num % 60
 
-    if hours == 0:
-        print(f'{minutes} minutes')
-    else:
-        print(f'{hours} hour(s), {minutes} minutes')
+    if hours == 1:
+        print(f'{hours} hour, ',end="")
+    elif hours > 1:
+        print(f'{hours} hours, ',end="")
+
+    if minutes == 1:
+        print(f'{minutes} minute',end="")
+    elif minutes > 1:
+            print(f'{minutes} minutes',end="")
+
+    print()
+    
 
 if __name__ == '__main__':
     to_standard_time(71)
