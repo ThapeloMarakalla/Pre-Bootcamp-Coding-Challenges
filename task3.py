@@ -7,8 +7,8 @@ def task3(num1, num2):
     return False
 
 if __name__ == '__main__':
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
+    num1 = 23
+    num2 = 41
     
     if task3(num1, num2):
         print('Either one of the numbers(or both) is 65 or the sum of the', end=' ')
