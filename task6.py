@@ -11,5 +11,6 @@ def maximum(*args):
     else:
         raise TypeError('maximum expected at least 1 arguments, got 0')
 
+
 if __name__ == '__main__':
     print(f'The maximum between -1 ,5, 12, 4, 11, 81, 6 is {maximum(-1 ,5, 12, 4, 11, 81, 6)}')
