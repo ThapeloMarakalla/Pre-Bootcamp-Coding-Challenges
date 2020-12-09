@@ -2,7 +2,7 @@ def maximum(*args):
     """Return the maximum number in args
     """
     if args:
-        max = args[0] # assign the first element in args to max
+        max = args[0]
 
         for num in args[1:]:
             if num > max:
